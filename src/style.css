@@ -1,5 +1,48 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: forestgreen;
 }
+
+.card {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 150px;
+  height: 220px;
+  padding: 20px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+  position: relative;
+  user-select: none;
+}
+
+.card .top-left,
+.card .bottom-right {
+  position: absolute;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.card .top-left {
+  top: 10px;
+  left: 15px;
+}
+
+.card .bottom-right {
+  bottom: 10px;
+  right: 15px;
+  transform: rotate(180deg);
+}
+
+.card .center {
+  font-size: 80px;
+  line-height: 150px;
+}
+
+.red {
+  color: red;
+}
+
